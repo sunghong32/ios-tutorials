@@ -14,6 +14,10 @@
 		1296C1EB2764177800CC9685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296C1E92764177800CC9685 /* LaunchScreen.storyboard */; };
 		1296C1F32764188C00CC9685 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296C1F22764188C00CC9685 /* LoginViewController.swift */; };
 		1296C1F52764196700CC9685 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296C1F42764196700CC9685 /* HomeViewController.swift */; };
+		655A6A1B2A0C928E006A16D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A6A1A2A0C928E006A16D6 /* HomeViewModel.swift */; };
+		65DDDC272A0C858500318E53 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDDC262A0C858500318E53 /* User.swift */; };
+		65DDDC292A0C85CA00318E53 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDDC282A0C85CA00318E53 /* LoginViewModel.swift */; };
+		65DDDC2E2A0C888C00318E53 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDDC2D2A0C888C00318E53 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1296C1EC2764177800CC9685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1296C1F22764188C00CC9685 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1296C1F42764196700CC9685 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		655A6A1A2A0C928E006A16D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		65DDDC262A0C858500318E53 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		65DDDC282A0C85CA00318E53 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		65DDDC2D2A0C888C00318E53 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +69,33 @@
 				1296C1DE2764177600CC9685 /* AppDelegate.swift */,
 				1296C1E02764177600CC9685 /* SceneDelegate.swift */,
 				1296C1E42764177600CC9685 /* Main.storyboard */,
-				1296C1F22764188C00CC9685 /* LoginViewController.swift */,
-				1296C1F42764196700CC9685 /* HomeViewController.swift */,
+				65DDDC2A2A0C85D300318E53 /* Login */,
+				655A6A192A0C9281006A16D6 /* Home */,
 				1296C1E72764177800CC9685 /* Assets.xcassets */,
 				1296C1E92764177800CC9685 /* LaunchScreen.storyboard */,
 				1296C1EC2764177800CC9685 /* Info.plist */,
+				65DDDC262A0C858500318E53 /* User.swift */,
+				65DDDC2D2A0C888C00318E53 /* NetworkService.swift */,
 			);
 			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		655A6A192A0C9281006A16D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1296C1F42764196700CC9685 /* HomeViewController.swift */,
+				655A6A1A2A0C928E006A16D6 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		65DDDC2A2A0C85D300318E53 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1296C1F22764188C00CC9685 /* LoginViewController.swift */,
+				65DDDC282A0C85CA00318E53 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1296C1F32764188C00CC9685 /* LoginViewController.swift in Sources */,
+				655A6A1B2A0C928E006A16D6 /* HomeViewModel.swift in Sources */,
 				1296C1DF2764177600CC9685 /* AppDelegate.swift in Sources */,
+				65DDDC2E2A0C888C00318E53 /* NetworkService.swift in Sources */,
+				65DDDC292A0C85CA00318E53 /* LoginViewModel.swift in Sources */,
 				1296C1E12764177600CC9685 /* SceneDelegate.swift in Sources */,
+				65DDDC272A0C858500318E53 /* User.swift in Sources */,
 				1296C1F52764196700CC9685 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B434W34DLF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesignPattern/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.macco.DesignPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunghong.DesignPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B434W34DLF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesignPattern/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.macco.DesignPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunghong.DesignPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

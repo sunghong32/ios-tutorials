@@ -1,0 +1,24 @@
+//
+//  LoginViewModel.swift
+//  DesignPattern
+//
+//  Created by 민성홍 on 2023/05/11.
+//
+
+import Foundation
+
+final class LoginViewModel {
+    @Published var error: String?
+
+    func login(
+        email: String,
+        password: String
+    ) {
+        NetworkService.shared.login(
+            email: email,
+            password: password
+        ) { [weak self] success in
+            self?.error = success ? nil : "Invalid Credentials"
+        }
+    }
+} 
